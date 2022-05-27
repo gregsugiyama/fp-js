@@ -28,7 +28,7 @@ const recursiveFactorial = (n, product = 1) => {
     return product;
   }
 
-  return factorial(n - 1, product * n);
+  return recursiveFactorial(n - 1, product * n);
 };
 
 // Recursive Flatten fn
